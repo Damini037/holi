@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Holi Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .holi-animation {
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .splash {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      animation: splashAnimation 2s ease-in-out infinite;
+    }
+
+    @keyframes splashAnimation {
+      0% {
+        transform: scale(0);
+        background-color: #ff5252; /* Red */
+      }
+      25% {
+        background-color: #448AFF; /* Blue */
+      }
+      50% {
+        background-color: #FFD600; /* Yellow */
+      }
+      75% {
+        background-color: #00E676; /* Green */
+      }
+      100% {
+        transform: scale(1.2);
+        background-color: #FF4081; /* Pink */
+      }
+    }
+
+    .splash:nth-child(1) {
+      top: 50px;
+      left: 50px;
+    }
+
+    .splash:nth-child(2) {
+      top: 100px;
+      right: 100px;
+    }
+
+    .splash:nth-child(3) {
+      bottom: 50px;
+      left: 100px;
+    }
+
+    /* Additional bubbles */
+    .splash:nth-child(4) {
+      top: 150px;
+      left: 200px;
+    }
+
+    .splash:nth-child(5) {
+      top: 200px;
+      right: 50px;
+    }
+
+    .splash:nth-child(6) {
+      bottom: 150px;
+      left: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="holi-animation">
+      <h1>Happy Holi!</h1>
+      <div class="splash"></div>
+      <div class="splash"></div>
+      <div class="splash"></div>
+      <!-- Additional bubbles -->
+      <div class="splash"></div>
+      <div class="splash"></div>
+      <div class="splash"></div>
+    </div>
+  </div>
+</body>
+</html>
